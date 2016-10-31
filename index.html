@@ -10,7 +10,7 @@
     <script src="https://npmcdn.com/aframe-animation-component@3.0.1"></script>
     <script src="https://npmcdn.com/aframe-event-set-component@3.0.1"></script>
     <script src="https://rawgit.com/ngokevin/aframe-layout-component/master/dist/aframe-layout-component.min.js"></script>
-
+  <script src="https://rawgit.com/gasolin/aframe-href-component/master/dist/aframe-href-component.min.js"></script>
     <script src="components/update-raycaster.js"></script>
   </head>
   <body>
@@ -26,8 +26,8 @@
       <a-sky id="image-360" radius="100" src="#background"></a-sky>
 
       <!-- Image links. -->
-        <a-entity id ="layout" layout="type: circle; radius: 4">
-            <project v-for="project in projects"></project>
+        <a-entity id ="project_layout" layout="type: circle; radius: 5" name="playout">
+            <project v-for="project in projects"  v-bind::href="project.href" ></project>
         </a-entity>
 
       <!-- Camera + cursor. -->

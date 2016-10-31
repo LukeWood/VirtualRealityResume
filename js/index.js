@@ -1,8 +1,12 @@
 Vue.component('project', {
-  template: '<a-box></a-box>'
+  props:['project'],
+  template: `
+  <a-box src="#background" onClick="location.href=this.href">
+  </a-box>
+  `
 })
 var v = new Vue({
-  el:"#layout",
+  el:"#project_layout",
   data:{
     projects:[]
   }
