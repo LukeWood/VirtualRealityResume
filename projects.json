@@ -1,9 +1,11 @@
 [
 {"text":"AREA 51",
 "href":"http://lukewoodsmu.github.io/AREA-51",
+"img":"img/area51.jpg",
 "key":0},
 {"text":"Earth Data Visualization",
 "href":"http://lukewoodsmu.github.io/EarthMeteors/",
+"img":"img/earth.png",
 "key":1},
 {"text":"Neural Network Rapper",
 "href":"https://github.com/LukeWoodSMU/PyRap",

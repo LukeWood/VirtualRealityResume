@@ -2,10 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>360&deg; Image Gallery</title>
+    <title>VR Resume</title>
     <meta name="description" content="360&deg; Image Gallery - A-Frame">
     <script src="lib/aframe.js"></script>
-    <script src="lib/vue.js"></script>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://npmcdn.com/aframe-animation-component@3.0.1"></script>
     <script src="https://npmcdn.com/aframe-event-set-component@3.0.1"></script>
@@ -16,8 +15,8 @@
   <body>
 
     <a-scene>
-      <a-assets>
-        <img id="background" crossorigin="anonymous" src="background.jpg">
+      <a-assets id = "assets">
+        <img id="background" crossorigin="anonymous" src="background.png">
         <!-- Image link template to be reused. -->
       </a-assets>
 
@@ -27,7 +26,6 @@
 
       <!-- Image links. -->
         <a-entity id ="project_layout" layout="type: circle; radius: 5" name="playout">
-            <project v-for="project in projects"  v-bind::href="project.href" ></project>
         </a-entity>
 
       <!-- Camera + cursor. -->
