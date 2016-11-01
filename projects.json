@@ -12,8 +12,11 @@
 "img":"img/gratefuldead.jpg",
 "key":2},
 {"text":"Automated Surf Report Texts",
-"href":"https://github.com/LukeWoodSMU/DailySurfReport","key":3},
+"href":"https://github.com/LukeWoodSMU/DailySurfReport",
+"img":"img/surf.jpg",
+"key":3},
 {"text":"Command Line Facebook Messenger",
+  "img":"img/climessenger.png",
 "href":"https://github.com/LukeWoodSMU/CommandLine-Facebook-Chat","key":4},
 {"text":"Created This Website using Reactjs",
 "href":"https://github.com/lukewoodsmu/lukewoodsmu.github.io","key":5}
