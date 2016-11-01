@@ -10,25 +10,30 @@
     <script src="https://npmcdn.com/aframe-event-set-component@3.0.1"></script>
     <script src="https://rawgit.com/ngokevin/aframe-layout-component/master/dist/aframe-layout-component.min.js"></script>
   <script src="https://rawgit.com/gasolin/aframe-href-component/master/dist/aframe-href-component.min.js"></script>
+    <script src="https://rawgit.com/ngokevin/aframe-text-component/master/dist/aframe-text-component.min.js"></script>
     <script src="components/update-raycaster.js"></script>
   </head>
   <body>
 
     <a-scene>
       <a-assets id = "assets">
-        <img id="background" crossorigin="anonymous" src="background.png">
-        <!-- Image link template to be reused. -->
+        <img id="background" crossorigin="anonymous" src="background.jpg">
       </a-assets>
 
-      <!-- 360-degree image. -->
+        <a-entity position="-5 2 -4" text="text: Click on a box to see the project!">
+              <a-animation attribute="position"
+                       begin="3000"
+                       dur="10000"
+                       fill="forwards"
+                       to="-5 100 -4"
+                       repeat="0"></a-animation>
+        </a-entity>
 
-      <a-sky id="image-360" radius="100" src="#background"></a-sky>
+      <a-sky id="image-360" radius="10" src="#background"></a-sky>
 
-      <!-- Image links. -->
         <a-entity id ="project_layout" layout="type: circle; radius: 5" name="playout">
         </a-entity>
 
-      <!-- Camera + cursor. -->
       <a-entity camera look-controls>
         <a-cursor id="cursor"
           animation__click="property: scale; startEvents: click; from: 0.1 0.1 0.1; to: 1 1 1; dur: 150"

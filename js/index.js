@@ -4,7 +4,7 @@ var assets = document.getElementById("assets");
 $.getJSON("projects.json",function(data){
 
   for(var i = 0; i < data.length; i++){
-    var project = data[i];
+    (function(){var project = data[i];
     var img = document.createElement("img");
     img.src = project.img;
     img.setAttribute("id",i+"")
@@ -14,6 +14,7 @@ $.getJSON("projects.json",function(data){
     el.setAttribute("scale","1.3 1.3 1.3");
     el.addEventListener("click", function(){location.href = project.href;});
     root.append(el);
+  })();
   }
 
 });
