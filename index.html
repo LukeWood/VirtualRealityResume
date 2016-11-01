@@ -40,6 +40,15 @@
                         repeat="indefinite"></a-animation>
         </a-entity>
 
+        <a-entity id ="company_layout" layout="type: circle; radius: 7" rotation="0 0 0 " position="0 0 0" name="playout">
+          <a-animation attribute="rotation"
+                        dur="100000"
+                        easing="linear"
+                        fill="forwards"
+                        to="0 -360 0"
+                        repeat="indefinite"></a-animation>
+        </a-entity>
+
       <a-entity camera look-controls>
         <a-cursor id="cursor"
           animation__click="property: scale; startEvents: click; from: 0.1 0.1 0.1; to: 1 1 1; dur: 150"

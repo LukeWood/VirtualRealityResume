@@ -1,0 +1,15 @@
+[
+{"text":"AT&T",
+"href":"https://www.att.com/",
+"img":"img/att.png",
+"key":0},
+{"text":"NGC",
+"href":"www.northropgrumman.com/",
+"img":"img/ngc.jpg",
+"key":0},
+{
+  "text":"EDC",
+  "href":"http://www.sandiegobusiness.org/",
+  "img":"img/sdedc.png"
+}
+]
