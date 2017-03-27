@@ -1,4 +1,8 @@
 [
+  {"text":"AT&T",
+  "href":"http://www.mathnasium.com/",
+  "img":"img/mathnasium.jpg",
+  "key":0},
   {
     "text":"EDC",
     "href":"http://www.sandiegobusiness.org/",
@@ -6,12 +10,16 @@
     "key":2
   },
 {"text":"NGC",
-"href":"www.northropgrumman.com/",
+"href":"http://www.northropgrumman.com/",
 "img":"img/ngc.jpg",
 "key":1},
+{"text":"Your Company Here",
+"href":"img/ResumeRedux.pdf",
+"img":"img/yourlogohere.jpg",
+"key":2},
 
 {"text":"AT&T",
 "href":"https://www.att.com/",
-"img":"img/att.png",
+"img":"img/att.jpg",
 "key":0}
 ]
